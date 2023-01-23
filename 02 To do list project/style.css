@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px
+}
+
+nav div {
+    background-color: blue;
+    padding: 20px 30px;
+}
+.navBar {
+    list-style: none;
+    padding: 0px;   
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-content: space-between;
+    width: 45%;
+    /* background-color: aqua; */
+}
+li{
+    /* justify-content: flex-end; */
+    font-size: 1.3rem;
+    color: white;
+}
+ h4{
+    margin: 0px auto;
+    margin-top: 2rem;
+    /* border: 2px solid black; */
+    width: 25rem;
+    font-size: 2rem;
+    text-align: center;
+ }
+
+.input{
+    /* border: 1px solid black; */
+    display: flex;
+    gap: 20px;
+    /* padding: 10px; */
+    margin: 40px auto;
+    margin-bottom: 15px;
+    width: 38%;
+    margin-top: 1rem;
+    
+}
+div input , button{
+    padding: 10px;
+    border-radius: 5rem;
+}
+input{
+    width: 85%;
+    box-sizing: content-box;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.add{
+    border: 3px solid green;
+    font-size: 1rem;
+    color: green;
+    border-radius:5px
+}
+.add:hover{
+    color: white;
+    background-color:green;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+/* section{
+    border: 1px solid red
+} */
+/* ********************************************** */
+#Chapter {
+border: 1px solid black;
+border-radius: 10px;
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+padding:6px;
+padding-left: 0px;
+/* width:38%; */
+}
+li{
+display: flex;
+/* justify-content: flex-start; */
+/* border-bottom: 1px solid black; */
+padding: 10px;
+gap: 1rem; 
+margin: 0px;  
+color: black;
+width: 97%;
+/* border-radius: 7px; */
+}
+li h3{
+color: black;
+display: inline;
+/* border: 1px solid black; */
+padding: 5px;
+width: 90%; 
+flex-direction: row;
+margin: 0px;
+}
+.edit{
+color: black;
+background-color: orange;
+font-size: 1rem;
+border-radius: 5px;
+cursor: pointer;
+/* border-radius: none; */
+}
+.edit:hover{
+background-color: rgba(255, 166, 0, 0.8);
+
+}
+.delete{
+cursor: pointer;
+   border-radius: 5px;
+background-color:red;
+color: white;
+font-size: 1rem;
+}    
+.delete:hover{
+opacity: 1;
+background-color: rgba(234, 12, 12, 0.8);
+color: white;
+}
+
+
+section div{
+    margin: auto;
+     width: 40%;
+    /* border: 3px solid green; */
+}
+
+
+/*   midia query  */
+/* mobile short  */
+@media screen and (max-width: 320px) {
+    .navBar li{
+        font-size: 1rem;
+    }
+    .input{
+        width: 95%;
+    }
+    section div {
+        width: 95%;
+    }
+    #Chapter li h3{
+        font-size: 1.1rem;
+    }
+    #Chapter li{
+        gap: 7px;
+    }
+    li button{
+        padding: 0.5rem 0.3rem;
+    }
+    h4{
+        width: 80%;
+    }
+}
+
+/* mobile large */
+@media screen and (min-width:321px) and (max-width: 425px){
+    .input{
+        width:90%;
+    }
+    section div {
+        width: 90%;
+    }
+    #Chapter li h3{
+        font-size: 1.1rem;
+    }
+    #Chapter li{
+        gap: 0.5rem;
+    }
+    #Chapter li button{
+        padding: 6px 8px;
+    }
+}
+
+/* tablat la liya */
+  @media (min-width: 426px) and (max-width:768px) {
+    .input{
+        width: 65%;
+    }
+    section div {
+        width: 65%;
+    }
+    #Chapter li h3{
+        font-size: 1.1rem;
+    }
+    #Chapter li{
+        gap: 0.5rem;
+    }
+    #Chapter li button{
+        padding: 6px 8px;
+    }
+}
+
+/* large  PC */
+@media  (min-width: 768px)and (max-width:1440px) {
+    .input{
+        width: 45%;
+    }
+    section div {
+        width: 45%;
+    }
+    #Chapter li h3{
+        font-size: 1.1rem;
+    }
+    #Chapter li{
+        gap: 0.5rem;
+    }
+    #Chapter li button{
+        padding: 6px 8px;
+    }
+}
+
+@media (min-width: 1441px) {
+    .input{
+        width: 60%;
+    }
+    section div {
+        width: 60%;
+    }
+    #Chapter li h3{
+        font-size: 1.3rem;
+    }
+}

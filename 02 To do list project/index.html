@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <ul class="navBar">
+                <li>home</li>
+                <li>features</li>
+                <li>contact</li>
+                <li>about</li>
+            </ul>
+        </div>
+    </nav>
+    <h4 id="tital">To-Do List App</h4>
+    <section>
+        
+            <div class="input">
+                <input id="inputData" type="text" placeholder="Enter Task">
+                <button class="add" id="AddData">Add</button>
+            </div>
+            <div >
+                <ul  id="Chapter">
+                    <li>
+                        <h3>Code kar bhai</h3>
+                        <button class="edit" onclick="editToDo(this)">Edit</button>
+                        <button class="delete" onclick="removeToDo(this)">Remove</button>
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
