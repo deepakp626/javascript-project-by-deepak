@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    background-color: rgb(142, 78, 202);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+.search{
+    /* border: 2px solid red; */
+    padding:3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.searchBox{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.searchBox input{
+    width:40%;
+}
+.search h2{
+    /* border: 2px solid black; */
+}
+.searchBox input, button {
+    padding: 0.3rem  0.4rem;
+    font-size: 1rem;
+}
+.searchBox input:focus{
+    outline:1px solid rgb(72, 11, 129);
+}
+.searchBox button:hover{
+    background-color: rgb(78, 13, 139);
+}
+.searchBox button:active{
+    background-color: purple;
+}
+/* profile section */
+.profile{
+    /* border: 2px solid black; */
+    padding: 1.4rem 1.5rem;
+    width: 50%;
+    margin: 0px auto;
+    margin-top: 1rem;
+    box-shadow: 1px 1px  8px black;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.profile:hover{
+    transform: rotate(-3deg);
+}
+/* top section */
+.top{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content:space-between;
+}
+.images{
+    display: flex;
+}
+.images div {
+    width: 5.4rem;
+    height: 5.2rem;
+    /* border: 2px solid orange; */
+    /* width: 200px; */
+}
+.images div img{  
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5rem;
+}
+.namediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    padding-left: 3px;
+    margin: 0px auto;
+    margin-left: 1rem;
+    /* border: 3px solid red; */
+}
+.namediv h3{
+    margin: 0px;
+    /* border: 2px solid orange; */
+    width: 6.5rem;
+}
+
+.btn{
+    height:2rem;
+    padding: 0px auto;
+    /* border: 2px solid black; */
+    border-radius: 1rem;
+}
+/* About sub content */
+.about {
+    /* border: 2px solid aqua;  */
+}
+.about h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    /* border: 2px solid red;  */
+}
+.about h4{
+    margin-top: 0px;
+    /* border: 2px solid orange;  */
+}
+/* midia section */
+.midia{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+}
+.midia div{
+    /* border: 2px solid blue; */
+    text-align: center;
+}
+.midia div h3,p{
+    margin: 0px;
+    margin-bottom: 0.4rem;
+}
+/* not found profile */
+.notprofile{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:18rem;
+    color: red;
+}
+   /* hide */
+.hide{
+    display: none;
+}
+
+/* midia query */
+@media (max-width:767px) {
+.search{
+    font-size: 1.2rem;
+    padding: 1rem 0px;
+}
+    .searchBox input{
+        width: 60%;;
+    }
+    .profile{
+       width: 90%;
+    }
+    .top , .btn{
+       align-items: center;
+       font-size: 0.8rem;
+    }
+    .btn{
+        font-weight: bold;
+        height: 2.5rem;
+    }
+    .namediv{
+        width: 10rem;
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .profile{
+        width: 60%;
+    }
+    .namediv{
+        width: 10rem;
+    }
+}

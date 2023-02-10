@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Github Profile</title>
+</head>
+<body>
+     <section>
+        <div class="search">
+            <h2>Search Github Profile</h2>
+            <div class="searchBox">
+                <input type="text" placeholder="Search profile" id="searchHere">
+                <button type="button" href="" id="searchBtn">Search</button>
+            </div>
+        </div>
+     </section>
+     <section>
+         <div class="notprofile hide" id="notprofile">
+             <h3>Not Found</h3>
+            </div>
+        </section>
+     <section >
+        <div class="profile hide" id="profileDiv">
+             <div class="top">
+                 <div class="images"> 
+                    <div>  
+                        <img src="" alt="images" id="avatarimg">
+                    </div>
+                   <div class="namediv">
+                       <h3 id="name">name</h3>
+                       <h3 id="id">@id</h3>
+                   </div>
+                 </div>
+               <a target="_blank" href="" id="profile_link">
+                   <button type="button" class="btn" >Cleck Profile</button> 
+               </a> 
+             </div>
+             <div class="about">
+                <h3>About</h3>
+                <h4 id="bio">Bio</h4>
+             </div>
+             <div class="midia">
+                 <div>
+                     <h3>followers</h3>
+                      <p id="followers">none</p>
+                </div>
+                 <div>
+                     <h3>followings</h3>
+                      <p id="followings">none</p>
+                </div>
+                 <div>
+                     <h3>Repos</h3>
+                      <p  id="Repos">none</p>
+                </div>
+             </div>
+        </div>
+     </section>
+     <script src="./script.js"></script>
+</body>
+</html>
