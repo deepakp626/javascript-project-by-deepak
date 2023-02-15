@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="form">
+            <form onsubmit="stopRefrashing(event);">
+                <div class="subject" id="allsubject">
+                    <input type="number" placeholder="Maths" min="0" max="100" required>
+                    <input type="number" placeholder="Hindi" min="0" max="100" required>
+                    <input type="number" placeholder="English" min="0" max="100" required>
+                    <input type="number" placeholder="Science" min="0" max="100" required>
+                </div>
+                <div class="btn">
+                    <button id="btn">Calculate</button>
+                </div>
+                <p class="totalMarks" id="result"></p>
+            </form>
+        </div>
+    </section>
+    <section id="tital">
+        <h3>Calculate Your</h3>
+        <h1>Percentage</h1>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
