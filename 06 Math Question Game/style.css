@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.background{
+    background-image: url('./image/background.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+.container{
+    opacity: 0.8;
+    /* border: 1px solid red; */
+    max-width: 35rem;
+    margin: 0px auto;
+    position: relative;
+    top: 3rem;
+    background-color: rgb(180,212,224);
+    border-radius: 2rem;
+    text-align: center;
+    height: 20rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    box-shadow: 5px 5px 10px black;
+}
+.score{
+    margin-top: 2rem;
+    color: rgb(139,40,228);
+}
+.container button{
+    margin: 1.3rem auto;
+    width: 83%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    background-color: rgb(139,40,228);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+input{
+    width: 80%;
+    box-sizing:content-box;
+    display: block;
+    margin: 0px auto;
+    margin-top: 0.5rem;
+}
+input:focus{
+    border: 0.2rem solid rgb(139,40,228);
+}
+.container button:active{
+    background-color: red;
+}
+button,input{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+::placeholder{
+    font-size: 1.2rem;
+    color: black;
+}
+/* popup box for score */
+.popupbox{
+    /* border: 2px solid blue; */
+    max-width: 20rem;
+    margin: 0px auto;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: light;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    color: white;
+    box-shadow: 3px 3px 6px black;
+    /* visibility: visible; */
+}
+.open-popup{
+    visibility: visible;
+}
+.close-popup{
+    visibility: hidden;
+}
+@media (max-width: 580px) {
+    .container{
+        margin: 0px 1rem;
+    }
+    #submit{
+        margin: 0px auto;
+    }
+    .popupbox{
+        margin: 0px auto;
+        margin-top: 1rem;
+    }
+}
