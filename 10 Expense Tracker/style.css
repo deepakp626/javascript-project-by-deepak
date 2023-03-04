@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #3a3a3a;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        .container {
+            /* border: 2px solid red; */
+            max-width: 25rem;
+            /* height: 95vh; */
+            background-color: rgb(48, 45, 45);
+            color: white;
+            margin: 0.7rem auto;
+            border-radius: 1rem;
+        }
+
+        .inner-container {
+            margin: 1rem;
+        }
+
+        .head {
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .head h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .head h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* all transactions section */
+
+        .allTransactionsContainer {
+            /* border: 2px solid aqua; */
+            height: 12rem;
+            overflow-y: scroll;
+        }
+        .allTransactionsContainer::-webkit-scrollbar{
+            width: 3px;
+        }
+        .allTransactionsContainer::-webkit-scrollbar-track{
+            background-color: white;
+        }
+        .allTransactionsContainer::-webkit-scrollbar-thumb{
+            background-color: aqua;
+        }
+        hr {
+            color: white !important;
+            margin-bottom: 4px;
+        }
+
+        .list {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.7rem;
+            /* border: 2px solid blue; */
+            cursor: pointer;
+            /* height: 4rem; */
+            display: flex;
+            gap: 0px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .list div,
+        .list h4 {
+            padding: 0.5rem;
+            background-color: #fff;
+            color: black;
+        }
+
+        .color {
+            width: 2rem;
+            background-color: red;
+        }
+
+        .list div {
+            display: flex;
+            justify-content: space-between;
+            /* border: 2px solid red; */
+            width: 90%;
+            padding: 0px;
+        }
+
+        .togal {
+            /* border: 2px solid orange; */
+            background-color: white;
+            color: black;
+        }
+
+        .togal i {
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+
+        .footer {
+            /* border: 2px solid aqua; */
+            padding: 1rem;
+            background-color: white;
+            color: black;
+        }
+
+        .text-container {
+            /* border: 2px solid blue; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+        }
+
+        .text-container h4 {
+            /* font-weight: ; */
+            margin-bottom: 0.4rem;
+        }
+
+        .text-container input {
+            padding: 0.3rem;
+            outline: 1px solid black;
+        }
+
+        .text-container input:focus-visible {
+            outline: 2px solid black;
+        }
+
+        .btn-container {
+            /* border: 2px solid orange; */
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        .btn-container button {
+            padding: 0.2rem 0px;
+            width: 25rem;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            transition: 0.8s ease-in;
+        }
+
+        .btn-container button:hover {
+            opacity: 0.9;
+            transition: 1s ease-in;
+        }
+
+        #earn {
+            background-color: #1a8e1e;
+        }
+
+        #expen {
+            background-color: #ff1a1a;
+        }
+
+        .hide-show {
+            display: none;
+        }
+        @media screen and (max-width: 425px) {
+            .container{
+                margin: 0px auto;
+                /* border: 2px solid red; */
+                margin: 0px 0.5rem;
+                height: 100vh;
+            }
+            .text-container input{
+                width: 8rem;
+            }
+        }
