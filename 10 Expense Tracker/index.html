@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="head inner-container">
+                <h2>Expense Tracker</h2>
+                <h4 id="totalamount">₹ 0</h4>
+                <h4>Your Balance</h4>
+            </div>
+            <div class="transactions inner-container">
+                <h4 class="name">Transactions</h4>
+                <hr>
+                <div class="allTransactionsContainer">
+                    <ul id="ul" class="ul">
+                        <!-- <li id="list" class="list">
+                            <div>
+                                <h4 id="discription">discription</h4>
+                                <h4 id="price">+ ₹ 25</h4>
+                            </div>
+                            <h4 class="color">D</h4><br>
+                           <li id="icon" class="togal ">
+                                <i class="fa-solid fa-pen" onclick="editList(this)"></i>
+                                <i class="fa-sharp fa-solid fa-trash" onclick="deleteList(this)"></i>
+                           </li>
+                        </li> -->
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+                <h4>Add Transactions</h4>
+                <div class="text-container">
+                    <div class="text">
+                        <h4>Text</h4>
+                        <input id="text" type="text" placeholder="Enter Discription">
+                    </div>
+                    <div class="amount">
+                        <h4>Amount</h4>
+                        <input id="amount" type="number" placeholder="Enter Amount ">
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button id="earn">
+                        <h4 id="currentearn">₹ 0 </h4>
+                        <h4>Earnings</h4>
+                    </button>
+                    <button id="expen">
+                        <h4 id="currentexpens">₹ 0</h4>
+                        <h4>Expense</h4>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
