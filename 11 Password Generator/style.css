@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+*{margin: 0px;padding: 0px; 
+  font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    /* border: 1px solid red; */
+    max-width:25rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 5px black;
+    margin: 2rem auto;
+}
+.name{
+    /* border: 2px solid aqua; */
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.name i{
+    color: red;font-size: 1.3rem;
+    gap: 5rem;
+}
+.password{
+    background-color: rgb(250,230,179);
+    padding:  0.6rem 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+    height: 1.5rem;
+    cursor: pointer;
+}
+.password-length{
+    padding: 1rem;
+    /* border: 2px solid blue; */
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+.checkbox{
+     /* border: 1px solid orange; */
+     line-height: 1.5rem;
+}
+.checkbox div{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox div input[type=checkbox]{
+    accent-color: red;
+}
+.btn button{
+    padding:  0.6rem 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(255,222,137);
+    border: none;
+    cursor: pointer;
+}
+@media  (max-width: 425px){
+    .container{
+        margin:2rem 1rem;
+    }
+}
