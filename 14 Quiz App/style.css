@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Sofia Sans', sans-serif;
+        }
+
+        section {
+            /* border: 2px solid red; */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1980d0;
+        }
+
+        .container {
+            /* border: 1px solid blue; */
+            width: 30rem;
+            /* height: 10rem; */
+            background-color: white;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .question {
+            font-size: 1.3rem;
+            padding: 0.7rem;
+        }
+
+        .option div {
+            padding: 0.9rem;
+            border-top: 1px solid black;
+        }
+
+        .option div input {
+            cursor: pointer;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            background-color: #2f0748;
+            color: white;
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            cursor: pointer;
+            /* border: none; */
+        }
+
+        .green {
+            background-color: rgb(10, 154, 10);
+        }
+
+        .red {
+            background-color: rgb(197, 31, 31);
+        }
+        .textgreen{
+            color : rgb(42, 155, 42)
+        }
+        .textred{
+            color : rgba(240, 119, 49, 0.917)
+        }
+        @media  (max-width: 425px) {
+            .container{
+                margin:0px 2rem;
+            }
+        }
+        @media  (min-width: 426px) and (max-width:768px) {
+            .container{
+                margin:0px 2rem;
+            }
+        }
