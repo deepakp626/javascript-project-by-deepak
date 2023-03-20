@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All JS project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-     <style>
+    <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        *{
-            margin:0px;
+
+        * {
+            margin: 0px;
             font-family: 'Roboto', sans-serif;
             text-transform: capitalize;
         }
+
         .heading {
             text-align: center;
             font-weight: bold;
@@ -24,11 +27,13 @@
             flex-wrap: wrap;
             gap: 1rem;
         }
-        .heading input{
-            padding: 0.5rem ;
+
+        .heading input {
+            padding: 0.5rem;
             border-radius: 20px;
         }
-        .container{
+
+        .container {
             /* border: 2px solid red; */
             padding: 1rem 1.5rem;
             display: flex;
@@ -36,173 +41,193 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        .project{
+
+        .project {
             /* border: 2px solid black; */
             width: 25rem;
             height: 15rem;
-            border-radius:20px;
+            border-radius: 20px;
             overflow: hidden;
-            transition: all  0.3s ease-out ;
-            box-shadow: 6px 6px 7px  rgba(2, 3, 3, 0.601);
+            transition: all 0.3s ease-out;
+            box-shadow: 6px 6px 7px rgba(2, 3, 3, 0.601);
         }
-        .project:hover{
+
+        .project:hover {
             transform: scale(1.1);
         }
-        .project a{
-            text-decoration:none;
+
+        .project a {
+            text-decoration: none;
         }
-        .project a img{
+
+        .project a img {
             /* border: 1px solid black; */
             width: 100%;
             height: 80%;
             /* object-fit: cover; */
             display: block;
         }
-        .name{
+
+        .name {
             text-align: center;
             font-size: 2rem;
             color: black;
             font-weight: bold;
             /* border: 2px solid red; */
             padding: 0.4rem;
-            background-color: rgb(143,143,143);
+            background-color: rgb(143, 143, 143);
         }
-        @media  (max-width:600px) {
-            .heading h1{
+
+        @media (max-width:600px) {
+            .heading h1 {
                 padding-top: 10px;
                 font-size: 2rem;
             }
         }
+
         @media (min-width:601px) and (max-width:768px) {
-            .container{
+            .container {
                 display: grid;
-                grid-template-columns: repeat(2,1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
-            .project{
+
+            .project {
                 width: 100%;
             }
         }
 
-        @media  (min-width:769px) {
-            .container{
+        @media (min-width:769px) {
+            .container {
                 display: grid;
-                grid-template-columns: repeat(3,1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
-            .project{
+
+            .project {
                 width: 100%;
             }
         }
-     
-     </style>
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-261097190-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-261097190-1');
+    </script>
+
 </head>
 <body>
     <div class="heading">
-        <h1 id="tital">All  javascript project</h1>
+        <h1 id="tital">All javascript project</h1>
         <input type="text" placeholder="search project">
     </div>
     <section>
         <div class="container">
-            
+
             <div class="project">
                 <a href="./15  Notes Taking App/index.html" target="_blank">
                     <img src="./images/15 Notes Taking App.png" alt="project img">
-                    <h3 class="name" >Notes Taking App</h3>
+                    <h3 class="name">Notes Taking App</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./01 Bulb on off project/index.html" target="_blank">
                     <img src="./images/01 bulb.png" alt="project img">
-                    <h3 class="name" >Bulb on off</h3>
+                    <h3 class="name">Bulb on off</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./02 To do list project/index.html" target="_blank">
                     <img src="./images/02 To do .png" alt="project img">
-                    <h3 class="name" >to do</h3>
+                    <h3 class="name">to do</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./03 life timer/index.html" target="_blank">
                     <img src="./images/03 life timer.png" alt="project img">
-                    <h3 class="name" >life timer</h3>
+                    <h3 class="name">life timer</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./04 github profile/index.html" target="_blank">
                     <img src="./images/04 Search Github Profile.png" alt="project img">
-                    <h3 class="name" >Search Github Profile</h3>
+                    <h3 class="name">Search Github Profile</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./05 marks calculator/index.html" target="_blank">
                     <img src="./images/05 Marks calculator.png" alt="project img">
-                    <h3 class="name" >Marks calculator</h3>
+                    <h3 class="name">Marks calculator</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./06 Math Question Game/index.html" target="_blank">
                     <img src="./images/06 Math-Question-game.png" alt="project img">
-                    <h3 class="name" >Math Question game</h3>
+                    <h3 class="name">Math Question game</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./08 Color palette Generator/index.html" target="_blank">
                     <img src="./images/08 Color palette Generator.png" alt="project img">
-                    <h3 class="name" >Color Palette Generator</h3>
+                    <h3 class="name">Color Palette Generator</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./09 QR Code Generator/index.html" target="_blank">
                     <img src="./images/09  QR Code Generator.png" alt="project img">
-                    <h3 class="name" > QR Code Generator</h3>
+                    <h3 class="name"> QR Code Generator</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./10 Expense Tracker/index.html" target="_blank">
                     <img src="./images/10 Expense Tracker.png" alt="project img">
-                    <h3 class="name" > Expense Tracker</h3>
+                    <h3 class="name"> Expense Tracker</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./11 Password Generator/index.html" target="_blank">
                     <img src="./images/11 password generator.png" alt="project img">
-                    <h3 class="name" > Password Generator</h3>
+                    <h3 class="name"> Password Generator</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./12 drag drop and sortable/index.html" target="_blank">
                     <img src="./images/12 drag drop and sortable list.png" alt="project img">
-                    <h3 class="name" > drag drop and sortable list</h3>
+                    <h3 class="name"> drag drop and sortable list</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./13 countdown timer/index.html" target="_blank">
                     <img src="./images/13 countdown timer.png" alt="project img">
-                    <h3 class="name" >countdown timer</h3>
+                    <h3 class="name">countdown timer</h3>
                 </a>
-             </div>
+            </div>
 
             <div class="project">
                 <a href="./14 Quiz App/index.html" target="_blank">
                     <img src="./images/14 Quiz app.png" alt="project img">
-                    <h3 class="name" >Quiz app</h3>
+                    <h3 class="name">Quiz app</h3>
                 </a>
-             </div>
+            </div>
 
         </div>
     </section>
-     
+
 </body>
+
 </html>
