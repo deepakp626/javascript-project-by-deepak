@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap');
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+}
+
+body {
+   background-color: rgb(40, 56, 74);
+}
+
+.name {
+   /* border: 2px solid black; */
+   position: sticky;
+   top: 0px;
+   width: 100%;
+   z-index: 3;
+   background-color: rgb(40, 56, 74);
+   box-shadow: 5px 0px 2rem  black ;
+}
+
+.name form {
+   max-width: 30rem;
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border-radius: 2rem;
+   overflow: hidden;
+   margin: 0px auto;
+   padding: 0px 0.7rem;
+
+}
+
+.name form input {
+   padding: 0.5rem;
+   width: 100%;
+   font-size: 1.2rem;
+   margin: 0.3rem;
+   outline: none;
+   border: none;
+   /* border: 1px solid orange; */
+}
+
+form i {
+   /* border: 2px solid aqua; */
+   color: #1964e6;
+   font-size: 2.5rem;
+   cursor: pointer;
+}
+
+input::placeholder {
+   color: black;
+   font-weight: 100;
+}
+
+.container {
+   /* border: 2px solid blue; */
+   padding: 1rem 0.5rem;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+}
+
+.item {
+   height: 22rem;
+   width: 20rem;
+   /* border: 2px solid orange; */
+   position: relative;
+   z-index: 1;
+   overflow: hidden;
+   border-radius: 1rem;
+   cursor: pointer;
+}
+
+.item:hover .movie-text {
+   transition: all 0.3s linear;
+   bottom: 0px;
+   z-index: 2;
+}
+
+.item img {
+   width: 100%;
+   height: 100%;
+}
+
+.movie-text {
+   /* border: 1px solid red; */
+   padding: 0px 1rem;
+   z-index: 0;
+   width: 100%;
+   position: absolute;
+   bottom: -100%;
+   background-color: white;
+   border-radius: 1rem;
+   color: black;
+   transition: all 0.3s linear;
+}
+
+.tital-rating {
+   display: flex;
+   margin-top: 1rem;
+}
+
+.tital-rating h2 {
+   flex-grow: 1;
+}
+
+.tital-rating span {
+   font-size: 1.7rem;
+   color: rgb(236, 161, 22);
+}
+
+.overview h2 {
+   font-weight: 100;
+}
+
+.overview p {
+   height: 6rem;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   /* border: 2px solid aqua; */
+   font-size: 1rem;
+   margin-bottom: 1rem;
+   text-overflow: ellipsis;
+}
+
+@media (max-width:425px) {
+   .container {
+      justify-content: center;
+   }
+}
+
+@media(min-width:426px) and (max-width:768px) {
+   .container {
+      justify-content: space-around;
+   }
+
+   .item {
+      width: 40%;
+   }
+}
+
+@media (min-width:769px) and (max-width:1250px) {
+   .container {
+      justify-content: space-evenly;
+   }
+
+   .item {
+      width: 30%;
+   }
+}
