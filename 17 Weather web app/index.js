@@ -25,13 +25,13 @@ let API_KEY = `3265874a2c77ae4a04bb96236a642d2f`
             data= await fetch(url)
             data = await data.json()
             console.log(data)
+            if(data.cod == 404){
+                weatherEl.innerHTML = `<h2 class="notFound"> ${data.message}</h2>`
+                return;
+            }
         } catch (error) {
             console.log("error is ",error)
-            return;
-        }
-        if(data.cod == 404){
-            weatherEl.innerHTML = `  <h2 class="notFound"> ${data.message}</h2>`
-            return;
+            weatherEl.innerHTML = `<h2 class="notFound"> City Not found</h2>`
         }
         showWeather(data)
         console.log("done")
