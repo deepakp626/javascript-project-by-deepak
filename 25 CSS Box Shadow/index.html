@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Shadow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="name">
+                <h2>Box Shadow</h2>
+            </div>
+            <div class="box" id="box">
+                <div>
+                    <label for="h-offset">h-offset</label>
+                    <input id="h-offset" type="range" name="h-offset" min="-100" max="100">
+                </div>
+                <div>
+                    <label for="v-offset">v-offset</label>
+                    <input id="v-offset" type="range" name="v-offset" min="-100" max="100">
+                </div>
+                <div>
+                    <label for="blur">blur</label>
+                    <input id="blur" type="range" name="blur" min="0" max="200" value="10">
+                </div>
+                <div>
+                    <label for="spread">spread</label>
+                    <input id="spread" type="range" name="spread" min="0" max="100" value="10">
+                </div>
+                <div>
+                    <label for="color">color</label>
+                    <input id="color" type="color" name="color">
+                </div>
+            </div>
+            <div class="output">
+                <div class="icon"><i class="fa-solid fa-copy"></i></div>
+                <div class="result">
+                    <h2>-moz-box-shadow:rgb(0, 0, 0) 0px 0px 10px 10px </h2>
+                    <h2>-webkit-box-shadow:rgb(0, 0, 0) 0px 0px 10px 10px </h2>
+                    <h2>box-shadow:rgb(0, 0, 0) 0px 0px 10px 10px </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
