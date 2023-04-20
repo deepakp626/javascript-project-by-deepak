@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap');
+        *{ margin:0px; padding:0px ; box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            max-width: 30rem;
+            height: 100vh;
+            margin: 0px auto;
+            text-align: center;
+            position: relative;
+        }
+        .name{
+            font-size: 2.3rem;
+            /* border: 2px solid orange; */
+            position: inherit;
+            top: 15rem;
+        }
+        .colors{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            position: absolute;
+            margin: 0px auto;
+            bottom: 10rem;
+        }
+        .colors h2{
+            background-color: black;
+            padding: 0.4rem 1.5rem;
+            border-radius: 2rem;
+            color: white;
+            font-weight: 100;
+        }
+        #btn{
+            font-size: 1.7rem;
+            cursor: pointer;
+            border-radius: 0.5rem;
+        }
+        .copy{
+            position: absolute;
+            bottom: 1rem;
+            font-size: 0.6rem;
+            height: 6rem;
+            width: 100%;
+            background:black ;
+            color: white;
+            border-radius: 1rem;
+        }
+        .copy i{
+            color: white;
+            font-size: 1.4rem;
+            margin:0.5rem;
+            float: right;
+            cursor: pointer;
+        }
+        .copy i:active{
+           color: rgb(75, 238, 75);
+        }
+        .copy{
+            line-height: 5.8rem;
+        }
+        .hide{
+            display: none;
+        }
