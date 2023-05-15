@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: #5372f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    /* height: 10rem; */
+    background-color: white;
+    border-radius: 1rem;
+    width: 35rem;
+    padding: 1.5rem;
+}
+
+.heading {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.quote-area {
+    margin: 1rem 0px;
+    text-align: center;
+}
+
+.quote-area div img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.quote-area div {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+#first-quote {
+    margin-right: 1rem;
+}
+
+#last-quote {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.writer {
+    text-align: right;
+    font-weight: 100;
+    padding: 0.6rem 0px;
+}
+
+.last {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon ul {
+    color: black;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.icon ul li {
+    cursor: pointer;
+}
+
+.icon ul li img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid #5372f0;
+    border-radius: 10%;
+}
+.icon ul li img:hover{
+    border: 2px solid red;
+}
+
+.btn button {
+    width: 7rem;
+    height: 3rem;
+    padding: 0.5rem;
+    border-radius: 4rem;
+    font-size: 1rem;
+    font-weight: 300;
+    background-color: #5372f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 320px) {
+    .last{
+        flex-wrap: wrap;
+    }
+    .container{
+        margin: 0px 1rem;
+    }
+}
+@media (min-width: 321px) and (max-width:768px) {
+    .container{
+        margin: 0px 1rem;
+    }
+}
