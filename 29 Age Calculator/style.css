@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: black 0px 0px 20px;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.age {
+    font-size: 1.5rem;
+}
