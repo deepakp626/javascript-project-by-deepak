@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <form class="container"  id="form">
+        <h2>Create Account</h2>
+        <div class="fields">
+            <div>
+                <label for="username">Name</label>
+                <input class="" type="text" name="username" placeholder="Enter Name">
+                <p class="hide">Name cannot be Empty</p>
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input class="" pattern=".+@.+" type="email" name="email" placeholder="Enter E-mail">
+                <p class="hide">Email cannot be Empty</p>
+            </div>
+            <div>
+                <label for="Password">Password</label>
+                <input id="password" class="" type="Password" name="password" placeholder="Enter Password">
+                <p class="hide">Password cannot be Empty</p>
+            </div>
+            <div>
+                <label for="Confirm Password">Confirm Password</label>
+                <input id="conform-password" class="" type="password" name="confirmPassword"
+                    placeholder="Enter Password Again">
+                <p class="hide">Confirm Password is required</p>
+            </div>
+        </div>
+        <div class="terms-condition">
+            <input type="checkbox" required>
+            <p>I have read and agree to the Terms of Service</p>
+        </div>
+        <div class="sign-up">
+            <input id="sign-up" type="submit" value="Sign Up">
+        </div>
+    </form>
+</body>
+
+</html>
