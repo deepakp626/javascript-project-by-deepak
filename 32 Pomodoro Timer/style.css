@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: #151b37;
+}
+
+.container {
+    max-width: 22rem;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: #2c3e50;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3498db, #2c3e50);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#Break-type,
+.btns button {
+    margin: 2rem auto;
+    background-color: #000000;
+    padding: 0.5rem 0.3rem;
+    cursor: pointer;
+    color: #d9749f;
+    max-width: 20rem;
+}
+
+option {
+    padding: 0px 0.1rem;
+}
+
+#time {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 2rem auto;
+    background: linear-gradient(to right, #9867f0 0%, #d5557c 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.btns button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 1.5rem 1rem;
+    }
+}
