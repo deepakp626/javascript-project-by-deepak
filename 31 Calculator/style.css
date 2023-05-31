@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    /* border: 1px solid blue; */
+    max-width: 17rem;
+    margin: 0.5rem auto;
+    background-color: #22252d;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.screen textarea {
+    width: 100%;
+    padding: 0.5rem;
+    height: 6rem;
+    background-color: #22252d;
+    text-align: right;
+    color: white;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+}
+
+#result {
+    height: 3rem;
+}
+
+.screen div {
+    text-align: right;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.controls {
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: #292d36;
+}
+
+.item {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.item :last-child {
+    color: red;
+}
+
+.item button {
+    background-color: #272b33;
+    color: white;
+    padding: 0.8rem;
+    width: 20%;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 5px white;
+}
+
+.item button:hover {
+    box-shadow: 2px 2px 10px 3px white;
+    background-color: rgba(0, 0, 0, 0.297);
+}
+
+#clear {
+    padding-left: 3%;
+    flex-grow: 2;
+}
+@media screen and (max-width:768px){
+    .container{
+        margin: 0px auto;
+    }
+}
