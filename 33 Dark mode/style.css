@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans:wght@600;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  transition: all 1s ease;
+}
+.container {
+  text-align: center;
+  margin-top: 10rem;
+}
+.container h1 {
+  font-size: 3rem;
+  transition: all 1s ease;
+}
+#image {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+.black {
+  background-color: #000000;
+}
+.white-text {
+  color: white;
+}
+@media screen and (max-width: 375px) {
+  #heading {
+    font-size: 2rem;
+  }
+}
