@@ -9,22 +9,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
         * {
             margin: 0px;
             font-family: 'Roboto', sans-serif;
             text-transform: capitalize;
         }
 
+        body {
+            transition-duration: 1s;
+        }
+
         .heading {
             text-align: center;
             font-weight: bold;
             font-size: 1.5rem;
-            padding: 1rem 0px;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
-            flex-wrap: wrap;
             gap: 1rem;
+            box-shadow: 0px 0.2rem 1rem black;
+        }
+        .tital h1{
+            font-size: 1.6rem;
+        }
+
+        .mode button {
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            transition-duration: 1s;
+        }
+
+        .mode button img {
+            display: inline-block;
+            width: 4rem;
+            height: 4.5rem;
+            transition-duration: 1s;
         }
 
         .heading input {
@@ -33,7 +56,6 @@
         }
 
         .container {
-            /* border: 2px solid red; */
             padding: 1rem 1.5rem;
             display: flex;
             gap: 2rem;
@@ -42,9 +64,7 @@
         }
 
         .project {
-            /* border: 2px solid black; */
             width: 25rem;
-            height: 15rem;
             border-radius: 20px;
             overflow: hidden;
             transition: all 0.3s ease-out;
@@ -62,46 +82,110 @@
         .project a img {
             /* border: 1px solid black; */
             width: 100%;
-            height: 80%;
+            height: 13rem;
             /* object-fit: cover; */
             display: block;
         }
 
-        .name {
+        .info {
+            background-image: radial-gradient(circle farthest-corner at 22.4% 21.7%, rgba(4, 189, 228, 1) 0%, rgba(2, 83, 185, 1) 100.2%);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info h3 {
+            width: 100%;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.2rem;
             color: black;
             font-weight: bold;
-            /* border: 2px solid red; */
-            padding: 0.4rem;
-            background-color: rgb(143, 143, 143);
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
         }
+
+        .info div img {
+            width: 3.5rem;
+            height: 3.5rem;
+            margin: auto;
+        }
+        footer{
+            text-align:center;
+            position: sticky;
+            bottom: 0px;
+            background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+        }
+        .links , .links a{
+            font-size: 1.2rem;
+            color: white;
+        }
+        .links {
+            padding:0.5rem 0px;
+        }
+        .black {
+            background-color: black;
+        }
+
         @media (max-width:600px) {
-            .heading h1 {
+            .heading {
                 padding-top: 10px;
-                font-size: 2rem;
+                font-size: 0.5rem;
+            }
+
+            .mode button img {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+
+            .heading div a img {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+            #search{
+                margin-top: 0.5rem;
             }
         }
+
         @media (min-width:601px) and (max-width:768px) {
             .container {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
+            .tital h1{
+                font-size: 1.7rem;
+            }
             .project {
                 width: 100%;
             }
+            #search{
+                margin-top: 0.5rem;
+            }
         }
+
         @media (min-width:769px) {
             .container {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
             }
+
             .project {
                 width: 100%;
             }
+            
+        .tital {
+            display: grid;
+            gap: 1rem;
+            place-content: center;
+            align-content: center;
+            justify-content: center;
+            grid-auto-flow: column;
+        }
+        }
+        .white{
+            color: white;
         }
     </style>
-    
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-G-3QD821S51H"></script>
     <script>
@@ -114,220 +198,533 @@
     </script>
 
 </head>
-<body>
-    <div class="heading">
-        <h1 id="tital">All javascript project</h1>
-        <input type="text" placeholder="search project">
+
+<body class="">
+    <div class="heading ">
+        <div class="mode">
+            <button id="mode" class="black">
+                <img id="mode-img" src="./icons/sun.png" alt="">
+            </button>
+        </div>
+        <div class="tital">
+            <h1 id="tital" class="">HTML CSS JS practice projects</h1>
+            <input id="search" type="search" placeholder="search project">
+        </div>
+        <div>
+            <a href="https://github.com/deepakp626" target="_blank">
+                <img src="./icons/github.png" alt="">
+            </a>
+        </div>
     </div>
     <section>
         <div class="container">
             <div class="project">
                 <a href="./34 Currency Converter/index.html" target="_blank">
                     <img src="./images/34 Currency Converter.png" alt="project img">
-                    <h3 class="name">Currency Converter</h3>
+                    <div class="info">
+                        <h3 class="name">Currency Converter </h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/34%20Currency%20Converter">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./33 Dark mode/index.html" target="_blank">
                     <img src="./images/33 Dark Mode.png" alt="project img">
-                    <h3 class="name"> Dark Mode</h3>
+                    <div class="info">
+                        <h3 class="name"> Dark Mode</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/33%20Dark%20mode">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./32 Pomodoro Timer/index.html" target="_blank">
                     <img src="./images/32 Pomodoro Timer.png" alt="project img">
-                    <h3 class="name">Pomodoro Timer</h3>
+                    <div class="info">
+                        <h3 class="name">Pomodoro Timer</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/32%20Pomodoro%20Timer">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./31 Calculator/index.html" target="_blank">
                     <img src="./images/31 Calculator.png" alt="project img">
-                    <h3 class="name"> Calculator</h3>
+                    <div class="info">
+                        <h3 class="name"> Calculator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/31%20Calculator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./30 Form Validation/index.html" target="_blank">
                     <img src="./images/30 Form validation.png" alt="project img">
-                    <h3 class="name"> Form Validation</h3>
+                    <div class="info">
+                        <h3 class="name"> Form Validation</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/30%20Form%20Validation">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./29 Age Calculator/index.html" target="_blank">
                     <img src="./images/29 Age Calculator.png" alt="project img">
-                    <h3 class="name">Age Calculator</h3>
+                    <div class="info">
+                        <h3 class="name">Age Calculator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/29%20Age%20Calculator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./27 random quote generator/index.html" target="_blank">
                     <img src="./images/27 random quote generator.png" alt="project img">
-                    <h3 class="name">random quote generator</h3>
+                    <div class="info">
+                        <h3 class="name">random quote generator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/27%20random%20quote%20generator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./26 Random Linear Gradient/index.html" target="_blank">
                     <img src="./images/26 Random Linear Gradient.png" alt="project img">
-                    <h3 class="name">Random Linear Gradient</h3>
+                    <div class="info">
+                        <h3 class="name">Random Linear Gradient</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/26%20Random%20Linear%20Gradient">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="./25 CSS Box Shadow/index.html" target="_blank">
+                    <img src="./images/25 box Shadow.png" alt="project img">
+                    <div class="info">
+                        <h3 class="name">CSS box Shadow</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/25%20CSS%20Box%20Shadow">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="./24 Speed Reader/index.html" target="_blank">
+                    <img src="./images/24 Speed Reader.png" alt="project img">
+                    <div class="info">
+                        <h3 class="name">Speed Reader</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/24%20Speed%20Reader">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="./23 BMI calculator/index.html" target="_blank">
+                    <img src="./images/23 BMI calculator.png" alt="project img">
+                    <div class="info">
+                        <h3 class="name">BMI calculator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/23%20BMI%20calculator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./22 Tip calculator/index.html" target="_blank">
                     <img src="./images/22 Tip calculation.png" alt="project img">
-                    <h3 class="name">Tip calculation</h3>
-
+                    <div class="info">
+                        <h3 class="name">Tip calculation</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/22%20Tip%20calculator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./20 Stop Watch/index.html" target="_blank">
                     <img src="./images/20 Stop Watch.png" alt="project img">
-                    <h3 class="name">Stop Watch</h3>
+                    <div class="info">
+                        <h3 class="name">Stop Watch</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/20%20Stop%20Watch">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./19 Binary to Decimal/index.html" target="_blank">
                     <img src="./images/19 Binary to Decimal Converter.png" alt="project img">
-                    <h3 class="name">Binary to Decimal Converter</h3>
+                    <div class="info">
+                        <h3 class="name">Binary to Decimal Converter</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/19%20Binary%20to%20Decimal">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./18  Paragraph Generator/index.html" target="_blank">
                     <img src="./images/18  Paragraph Generator.png" alt="project img">
-                    <h3 class="name">Paragraph Generator</h3>
+                    <div class="info">
+                        <h3 class="name">Paragraph Generator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/18%20%20Paragraph%20Generator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./17 Weather web app/index.html" target="_blank">
                     <img src="./images/17 weather web app.png" alt="project img">
-                    <h3 class="name">Weather Web app</h3>
+                    <div class="info">
+                        <h3 class="name">Weather Web app</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/17%20Weather%20web%20app">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./16 Movie Search web App/index.html" target="_blank">
                     <img src="./images/16 Movie Search web App.png" alt="project img">
-                    <h3 class="name">Movie Search web App</h3>
+                    <div class="info">
+                        <h3 class="name">Movie Search web App</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/16%20Movie%20Search%20web%20App">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./15  Notes Taking App/index.html" target="_blank">
                     <img src="./images/15 Notes Taking App.png" alt="project img">
-                    <h3 class="name">Notes Taking App</h3>
+                    <div class="info">
+                        <h3 class="name">Notes Taking App</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/15%20%20Notes%20Taking%20App">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./01 Bulb on off project/index.html" target="_blank">
                     <img src="./images/01 bulb.png" alt="project img">
-                    <h3 class="name">Bulb on off</h3>
+                    <div class="info">
+                        <h3 class="name">Bulb on off</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/01%20Bulb%20on%20off%20project">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./02 To do list project/index.html" target="_blank">
                     <img src="./images/02 To do .png" alt="project img">
-                    <h3 class="name">to do</h3>
+                    <div class="info">
+                        <h3 class="name">to do list</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/02%20To%20do%20list%20project">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./03 life timer/index.html" target="_blank">
                     <img src="./images/03 life timer.png" alt="project img">
-                    <h3 class="name">life timer</h3>
+                    <div class="info">
+                        <h3 class="name">life timer</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/03%20life%20timer">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./04 github profile/index.html" target="_blank">
                     <img src="./images/04 Search Github Profile.png" alt="project img">
-                    <h3 class="name">Search Github Profile</h3>
+                    <div class="info">
+                        <h3 class="name">Search Github Profile</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/04%20github%20profile">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./05 marks calculator/index.html" target="_blank">
                     <img src="./images/05 Marks calculator.png" alt="project img">
-                    <h3 class="name">Marks calculator</h3>
+                    <div class="info">
+                        <h3 class="name">Marks calculator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/05%20marks%20calculator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./06 Math Question Game/index.html" target="_blank">
                     <img src="./images/06 Math-Question-game.png" alt="project img">
-                    <h3 class="name">Math Question game</h3>
+                    <div class="info">
+                        <h3 class="name">Math Question game</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/06%20Math%20Question%20Game">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./07 fetch product search and filter/index.html" target="_blank">
                     <img src="./images/07 fetch product search and filter.png" alt="project img">
-                    <h3 class="name">product search</h3>
+                    <div class="info">
+                        <h3 class="name">product search</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/07%20fetch%20product%20search%20and%20filter">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./08 Color palette Generator/index.html" target="_blank">
                     <img src="./images/08 Color palette Generator.png" alt="project img">
-                    <h3 class="name">Color Palette Generator</h3>
+                    <div class="info">
+                        <h3 class="name">Color Palette Generator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/08%20Color%20palette%20Generator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./09 QR Code Generator/index.html" target="_blank">
                     <img src="./images/09  QR Code Generator.png" alt="project img">
-                    <h3 class="name"> QR Code Generator</h3>
+                    <div class="info">
+                        <h3 class="name"> QR Code Generator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/09%20QR%20Code%20Generator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./10 Expense Tracker/index.html" target="_blank">
                     <img src="./images/10 Expense Tracker.png" alt="project img">
-                    <h3 class="name"> Expense Tracker</h3>
+                    <div class="info">
+                        <h3 class="name"> Expense Tracker</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/10%20Expense%20Tracker">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./11 Password Generator/index.html" target="_blank">
                     <img src="./images/11 password generator.png" alt="project img">
-                    <h3 class="name"> Password Generator</h3>
+                    <div class="info">
+                        <h3 class="name"> Password Generator</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/11%20Password%20Generator">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./12 drag drop and sortable/index.html" target="_blank">
                     <img src="./images/12 drag drop and sortable list.png" alt="project img">
-                    <h3 class="name"> drag drop and sortable list</h3>
+                    <div class="info">
+                        <h3 class="name"> drag drop and sortable list</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/12%20drag%20drop%20and%20sortable">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./13 countdown timer/index.html" target="_blank">
                     <img src="./images/13 countdown timer.png" alt="project img">
-                    <h3 class="name">countdown timer</h3>
+                    <div class="info">
+                        <h3 class="name">countdown timer</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/13%20countdown%20timer">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
             <div class="project">
                 <a href="./14 Quiz App/index.html" target="_blank">
                     <img src="./images/14 Quiz app.png" alt="project img">
-                    <h3 class="name">Quiz app</h3>
+                    <div class="info">
+                        <h3 class="name">Quiz app</h3>
+                        <div class="icon">
+                            <a target="_blank"
+                                href="https://github.com/deepakp626/javascript-project-by-deepak/tree/master/14%20Quiz%20App">
+                                <img src="./icons/github.png" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </a>
             </div>
 
         </div>
     </section>
-
+    <footer>
+        <h2 class="links">
+            < / > with ❤️ by <a href="">Deepak prajapat</a> <br>
+            <a target="_blank" href="https://github.com/deepakp626/javascript-project-by-deepak">#All projects</a>
+        </h2>
+    </footer>
+    <script>
+        const modeEl = document.getElementById("mode");
+        const modeImgEl = document.getElementById("mode-img")
+        const titalEl = document.getElementById("tital")
+        let bgColor = 'white';
+        const change = () => {
+            if (bgColor == 'white') {
+                modeImgEl.src = './icons/moon.png';
+                bgColor = 'black';
+            } else {
+                modeImgEl.src = './icons/sun.png';
+                bgColor = 'white';
+            }
+            document.body.classList.toggle("black")
+            modeEl.classList.toggle("black")
+            titalEl.classList.toggle("white")
+        }
+        modeEl.addEventListener("click", change)
+    </script>
 </body>
 
 </html>
